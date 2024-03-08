@@ -20,4 +20,9 @@ class MethodChannelAndroidVersion extends AndroidVersionPlatform {
     final version = await methodChannel.invokeMethod<String>('getPlatformSDK');
     return version;
   }
+  @override
+  Future<String?> getRoute() async {
+    final version = await methodChannel.invokeMethod<String>('getRoute');
+    return version;
+  }
 }

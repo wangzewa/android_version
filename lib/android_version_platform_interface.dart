@@ -30,4 +30,7 @@ abstract class AndroidVersionPlatform extends PlatformInterface {
   Future<String?> getPlatformSDK() {
     throw UnimplementedError('platformSDK() has not been implemented.');
   }
+  Future<String?> getRoute() {
+    throw UnimplementedError('platformSDK() has not been implemented.');
+  }
 }

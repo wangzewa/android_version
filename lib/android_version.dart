@@ -8,4 +8,7 @@ class AndroidVersion {
   Future<String?> getPlatformSDK() {
     return AndroidVersionPlatform.instance.getPlatformSDK();
   }
+  Future<String?> getRoute() {
+    return AndroidVersionPlatform.instance.getRoute();
+  }
 }
